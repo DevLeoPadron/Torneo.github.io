@@ -86,6 +86,54 @@
             font-weight: 700;
             margin: 1px
         }
+        @keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img{
+  height: 100px;
+}
+
         @media (max-width: 600px) {
             body {
                 margin-top: 0;
@@ -151,6 +199,7 @@
     </style>
 </head>
 <body>
+    <div>
     <div id="logo">
         <img id="logos-principales" src="logos.png" alt="">
         <section class="torneo">
@@ -160,6 +209,62 @@
             <em>Cancha Deportiva José Félix Ribas Sector 2</em>
         </section>
     </div>
+    <div class="logos">
+        <div class="logo_items">
+        <img src="expreso.png">
+        <img src="Olimpo.png">
+        <img src="medusas.png">
+        <img src="macarena.png">
+        <img src="atenas.png">
+        <img src="araguaney.png">
+        <img src="linces.png">
+        <img src="sanjose.png">
+        <img src="jovenesdefuego.png">
+        <img src="unitedenaccion.png">
+        <img src="dreamteam.png">
+        <img src="fenix.png">
+        <img src="casaitalia.png">
+        <img src="goldenfire.png">
+        <img src="expreso.png">
+        <img src="Olimpo.png">
+        <img src="medusas.png">
+        <img src="macarena.png">
+        <img src="atenas.png">
+        <img src="araguaney.png">
+        <img src="linces.png">
+        <img src="sanjose.png">
+        <img src="jovenesdefuego.png">
+        <img src="unitedenaccion.png">
+        <img src="dreamteam.png">
+        </div>
+        <div class="logo_items">
+            <img src="fenix.png">
+            <img src="casaitalia.png">
+            <img src="goldenfire.png">
+            <img src="expreso.png">
+            <img src="Olimpo.png">
+            <img src="medusas.png">
+            <img src="macarena.png">
+            <img src="atenas.png">
+            <img src="araguaney.png">
+            <img src="linces.png">
+            <img src="sanjose.png">
+            <img src="jovenesdefuego.png">
+            <img src="unitedenaccion.png">
+            <img src="dreamteam.png">
+            <img src="fenix.png">
+            <img src="casaitalia.png">
+            <img src="goldenfire.png">
+            <img src="expreso.png">
+        <img src="Olimpo.png">
+        <img src="medusas.png">
+        <img src="macarena.png">
+        <img src="atenas.png">
+        <img src="araguaney.png">
+        <img src="linces.png">
+        <img src="sanjose.png">
+        </div>
+</div>
     <div class="tablas">
     <div class="categorias">
     <h1>Posiciones del Torneo</h1>
